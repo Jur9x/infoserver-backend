@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "singularName": "player",
+    "pluralName": "players",
+    "displayName": "Player",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jmenoprijmeni": {
+      "type": "string",
+      "required": true
+    },
+    "datumnarozeni": {
+      "type": "date",
+      "required": true
+    },
+    "vyska": {
+      "type": "integer"
+    },
+    "vaha": {
+      "type": "integer"
+    },
+    "vtymuod": {
+      "type": "date"
+    },
+    "team": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::team.team"
+    },
+    "post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post.post"
+    },
+    "state": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::state.state"
+    },
+    "cislodresu": {
+      "type": "integer"
+    },
+    "obrazek": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

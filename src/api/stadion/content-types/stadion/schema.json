@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stadions",
+  "info": {
+    "singularName": "stadion",
+    "pluralName": "stadions",
+    "displayName": "Stadion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jmeno": {
+      "type": "string"
+    },
+    "kapacita": {
+      "type": "integer"
+    },
+    "obrazek": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
